@@ -1,39 +1,64 @@
-name: Deploy Hexo Blog
-
+# name: 自动部署
+# 当有改动推送到main分支时，启动Action
 on:
   push:
     branches:
-      - master
+      - main
+  release:
+    types:
+      - published
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: 检查分支
+        uses: actions/checkout@v2
         with:
-          node-version: '20'
+          ref: main
 
-      - name: Install dependencies
-        run: npm install
+      - name: 安装 Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "16.x"
 
-      - name: Generate static files
+      - name: 安装 Hexo
         run: |
-          npm install -g hexo-cli
-          hexo clean
-          hexo generate
+          export TZ='Asia/Shanghai'
+          npm install hexo-cli -g
 
-      - name: Deploy with gh-pages action
-        uses: peaceiris/actions-gh-pages@v3
+      - name: 缓存 Hexo
+        id: cache-npm
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
         with:
-          github_token: ${{ secrets.AUTO_GITHUB_IO }}
-          repository-name: yeka-card/yeka-card.github.io
-          publish_dir: ./public
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: 安装依赖
+        if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
+        run: |
+          npm install gulp-cli -g #全局安装gulp
+          npm install --save
+
+      - name: 生成静态文件
+        run: |
+          hexo clean
+          hexo bangumi -u #bilibili番剧更新
+          hexo generate # 生成静态文件
+          hexo algolia # 同步 algolia 搜索
+          gulp
+
+      - name: 部署到Github
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token:  ${{ secrets.AUTO_GITHUB_IO }} # github token
+          repository-name: yeka-card/yeka-card.github.io # 推送的目标仓库：用户名/仓库 ShiJieCloud/blog-source
           branch: master # 推送的目标仓库分支
+          folder: public # 要推送的文件夹下的内容
           commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"
-
-
