@@ -23,6 +23,7 @@ jobs:
 
       - name: Generate static files
         run: |
+          npm install hexo-admin --save
           npm install -g hexo-cli
           hexo clean
           hexo generate
