@@ -1,0 +1,12 @@
+<div class="tags-container">
+    <h1 class="page-title">所有标签</h1>
+    
+    <div class="tags-cloud">
+      <% site.tags.sort('name').each(function(tag) { %>
+        <a href="<%- url_for(tag.path) %>" class="tag-item" style="font-size: <%= Math.max(100, 100 + Math.log(tag.posts.length) * 20) %>%;">
+          <%= tag.name %> (<%= tag.posts.length %>)
+        </a>
+      <% }); %>
+    </div>
+  </div>
+  

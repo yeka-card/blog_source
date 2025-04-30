@@ -1,0 +1,23 @@
+<div class="category-container">
+  <h1 class="category-title">分类: <%= page.category %></h1>
+  
+  <div class="category-posts">
+    <% page.posts.each(function(post) { %>
+      <div class="category-post">
+        <span class="category-post-date"><%= date(post.date, 'YYYY-MM-DD') %></span>
+        <a href="<%- url_for(post.path) %>" class="category-post-title"><%= post.title %></a>
+      </div>
+    <% }); %>
+  </div>
+  
+  <% if (page.total > 1) { %>
+    <div class="pagination">
+      <% if (page.prev) { %>
+        <a href="<%- url_for(page.prev_link) %>" class="pagination-prev">上一页</a>
+      <% } %>
+      <% if (page.next) { %>
+        <a href="<%- url_for(page.next_link) %>" class="pagination-next">下一页</a>
+      <% } %>
+    </div>
+  <% } %>
+</div>

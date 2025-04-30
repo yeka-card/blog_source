@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="<%= config.language || 'zh-CN' %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= config.title %><% if (page.title) { %> - <%= page.title %><% } %></title>
+  <link rel="stylesheet" href="<%- url_for('css/style.css') %>">
+  <% if (theme.favicon) { %>
+    <link rel="shortcut icon" href="<%- url_for(theme.favicon) %>">
+  <% } %>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo-container">
+        <a href="<%- url_for() %>" class="logo">
+          <% if (theme.logo) { %>
+            <img src="<%- url_for(theme.logo) %>" alt="<%= config.title %>">
+          <% } else { %>
+            <%= config.title %>
+          <% } %>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <% for (let i in theme.menu) { %>
+          <a href="<%- url_for(theme.menu[i]) %>" class="nav-item"><%= i %></a>
+        <% } %>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <%- body %>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+      </div>
+      <% if (theme.footer_links) { %>
+        <div class="footer-links">
+          <% for (let name in theme.footer_links) { %>
+            <a href="<%- url_for(theme.footer_links[name]) %>" class="footer-link"><%= name %></a>
+          <% } %>
+        </div>
+      <% } %>
+    </div>
+  </footer>
+
+  <% if (theme.scripts && theme.scripts.length) { %>
+    <% theme.scripts.forEach(function(url) { %>
+      <script src="<%- url_for(url) %>"></script>
+    <% }); %>
+  <% } %>
+</body>
+</html>

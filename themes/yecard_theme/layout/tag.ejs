@@ -1,0 +1,77 @@
+<div class="tags-container">
+  <div class="tags-header">
+    <h1 class="tags-title">所有标签</h1>
+    <p class="tags-subtitle">目前共计 <%= site.tags.length %> 个标签</p>
+  </div>
+  
+  <% if (site.tags.length) { %>
+    <div class="tags-cloud">
+      <% 
+        // 计算最大和最小文章数，用于标签大小计算
+        let maxCount = 0;
+        let minCount = Infinity;
+        site.tags.forEach(function(tag) {
+          maxCount = Math.max(maxCount, tag.posts.length);
+          minCount = Math.min(minCount, tag.posts.length);
+        });
+        
+        // 计算标签大小的函数
+        function getTagSize(count) {
+          const minSize = 1;
+          const maxSize = 2.5;
+          if (maxCount === minCount) return (minSize + maxSize) / 2;
+          const size = minSize + (count - minCount) / (maxCount - minCount) * (maxSize - minSize);
+          return size.toFixed(1);
+        }
+        
+        // 随机颜色数组
+        const colors = [
+          '#7c4dff', '#2196f3', '#00bcd4', '#009688', 
+          '#4caf50', '#8bc34a', '#ff9800', '#ff5722',
+          '#f44336', '#e91e63', '#9c27b0', '#673ab7'
+        ];
+      %>
+      
+      <% site.tags.sort('name').each(function(tag, index) { %>
+        <a href="<%- url_for(tag.path) %>" 
+           class="tag-item"
+           style="font-size: <%= getTagSize(tag.posts.length) %>rem; color: <%= colors[index % colors.length] %>">
+          <span class="tag-name"><%= tag.name %></span>
+          <span class="tag-count"><%= tag.posts.length %></span>
+        </a>
+      <% }); %>
+    </div>
+    
+    <!-- <div class="tags-categories">
+      <% 
+        // 按首字母分组
+        const tagGroups = {};
+        site.tags.sort('name').each(function(tag) {
+          const firstChar = tag.name.charAt(0).toUpperCase();
+          if (!tagGroups[firstChar]) {
+            tagGroups[firstChar] = [];
+          }
+          tagGroups[firstChar].push(tag);
+        });
+      %>
+      
+      <% Object.keys(tagGroups).sort().forEach(function(letter) { %>
+        <div class="tag-category">
+          <h2 class="tag-category-title"><%= letter %></h2>
+          <div class="tag-category-list">
+            <% tagGroups[letter].forEach(function(tag) { %>
+              <a href="<%- url_for(tag.path) %>" class="tag-category-item">
+                <span class="tag-category-name"><%= tag.name %></span>
+                <span class="tag-category-count"><%= tag.posts.length %></span>
+              </a>
+            <% }); %>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  <% } else { %>
+    <div class="no-tags">
+      <p>目前还没有标签。</p>
+    </div>
+  <% } %> -->
+</div>

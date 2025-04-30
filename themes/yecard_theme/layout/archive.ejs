@@ -1,0 +1,36 @@
+<div class="archive-container">
+  <h1 class="archive-title">归档</h1>
+  
+  <% let lastYear; %>
+  <% page.posts.sort('date', -1).each(function(post) { %>
+    <% const year = date(post.date, 'YYYY'); %>
+    <% if (lastYear !== year) { %>
+      <% if (lastYear) { %>
+        </div>
+      <% } %>
+      <div class="archive-year">
+        <h2 class="year-title"><%= year %></h2>
+      <% lastYear = year; %>
+    <% } %>
+    
+    <div class="archive-post">
+      <span class="archive-post-date"><%= date(post.date, 'MM-DD') %></span>
+      <a href="<%- url_for(post.path) %>" class="archive-post-title"><%= post.title %></a>
+    </div>
+  <% }); %>
+  
+  <% if (lastYear) { %>
+    </div>
+  <% } %>
+  
+  <% if (page.total > 1) { %>
+    <div class="pagination">
+      <% if (page.prev) { %>
+        <a href="<%- url_for(page.prev_link) %>" class="pagination-prev">上一页</a>
+      <% } %>
+      <% if (page.next) { %>
+        <a href="<%- url_for(page.next_link) %>" class="pagination-next">下一页</a>
+      <% } %>
+    </div>
+  <% } %>
+</div>

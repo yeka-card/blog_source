@@ -1,0 +1,59 @@
+<div class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title"><%= theme.hero.title || config.title %></h1>
+    <p class="hero-subtitle"><%= theme.hero.subtitle || config.subtitle %></p>
+    
+    <% if (theme.hero.buttons && theme.hero.buttons.length) { %>
+      <div class="hero-buttons">
+        <% theme.hero.buttons.forEach(function(button) { %>
+          <a href="<%- url_for(button.url) %>" class="button <%= button.type || 'primary' %>">
+            <%= button.text %>
+          </a>
+        <% }); %>
+      </div>
+    <% } %>
+  </div>
+</div>
+
+<!-- 博客文章卡片网格 -->
+<div class="blog-cards-grid">
+  <% site.posts.sort('date', -1).each(function(post) { %>
+    <a href="<%- url_for(post.path) %>" class="blog-card">
+      <h3 class="blog-card-title"><%= post.title %></h3>
+      <div class="blog-card-meta">
+        <span class="blog-card-date"><%= date(post.date, 'YYYY-MM-DD') %></span>
+        <% if (post.tags && post.tags.length) { %>
+          <div class="blog-card-tags">
+            <% post.tags.limit(3).each(function(tag) { %>
+              <span class="blog-card-tag">#<%= tag.name %></span>
+            <% }); %>
+          </div>
+        <% } %>
+      </div>
+      <div class="blog-card-excerpt">
+        <% if (post.excerpt) { %>
+          <%- post.excerpt %>
+        <% } else { %>
+          <%- truncate(strip_html(post.content), {length: 150}) %>
+        <% } %>
+      </div>
+    </a>
+  <% }); %>
+</div>
+
+<% if (theme.show_more_posts && site.posts.length > (theme.index_posts_limit || 6)) { %>
+  <div class="more-posts-link">
+    <a href="<%- url_for('/archives') %>" class="button secondary">查看更多文章</a>
+  </div>
+<% } %>
+
+<% if (page.total > 1) { %>
+  <div class="pagination">
+    <% if (page.prev) { %>
+      <a href="<%- url_for(page.prev_link) %>" class="pagination-prev">上一页</a>
+    <% } %>
+    <% if (page.next) { %>
+      <a href="<%- url_for(page.next_link) %>" class="pagination-next">下一页</a>
+    <% } %>
+  </div>
+<% } %>
