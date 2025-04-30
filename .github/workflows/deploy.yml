@@ -33,7 +33,7 @@ jobs:
           github_token: ${{ secrets.AUTO_GITHUB_IO }}
           repository-name: yeka-card/yeka-card.github.io
           publish_dir: ./public
-          branch: master # 推送的目标仓库分支
+          branch: main # 推送的目标仓库分支
           commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"
 #
 
