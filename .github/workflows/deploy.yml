@@ -31,4 +31,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.AUTO_GITHUB_IO }}
+          repository-name: yeka-card/yeka-card.github.io
           publish_dir: ./public
+          commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"
+
+
