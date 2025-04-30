@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W 野卡 - 博客md文档格式</title>
+  <link rel="stylesheet" href="/css/style.css">
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo-container">
+        <a href="/" class="logo">
+          
+            W 野卡
+          
+        </a>
+      </div>
+      <nav class="main-nav">
+        
+          <a href="/" class="nav-item">首页</a>
+        
+          <a href="/tags" class="nav-item">标签</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <article class="post-content">
+  <header class="post-header">
+    <h1 class="post-title">博客md文档格式</h1>
+    <div class="post-meta">
+      <span class="post-date">2025-04-29</span>
+      
+    </div>
+  </header>
+  
+  <div class="post-body">
+    <p>Hexo 中使用的 md（Markdown）文档，需符合 Markdown 基本语法规范，并通过 Front - matter（文件头）设置文章元数据 。具体如下：</p>
+<h3 id="1-Front-matter（文件头）"><a href="#1-Front-matter（文件头）" class="headerlink" title="1. Front - matter（文件头）"></a>1. Front - matter（文件头）</h3><p>位于文档开头，用<code>---</code>包裹，用于设置文章标题、日期、标签、分类等元数据 ，各字段间换行分隔。常见字段：</p>
+<ul>
+<li><strong>title</strong>：必填，文章标题，如<code>title: 科技发展新趋势</code> 。</li>
+<li><strong>date</strong>：必填，文章发布日期，格式<code>YYYY - MM - DD HH:MM:SS</code>，如<code>date: 2025 - 04 - 29 15:00:00</code> ，也可只写日期<code>2025 - 04 - 29</code> 。</li>
+<li><strong>tags</strong>：选填，文章标签，可多个，如<code>tags: - 科技 - 创新</code> 。</li>
+<li><strong>categories</strong>：选填，文章分类，如<code>categories: 科技前沿</code> 。若有多级分类，可写成<code>categories: - 大类 - 小类</code> 。</li>
+<li><strong>其他</strong>：还可根据主题或插件需求，添加<code>sticky</code>（置顶，值为数字，数字越大越靠前 ） 、<code>cover</code>（文章封面图片地址 ）等。</li>
+</ul>
+<h3 id="2-Markdown-正文语法"><a href="#2-Markdown-正文语法" class="headerlink" title="2. Markdown 正文语法"></a>2. Markdown 正文语法</h3><ul>
+<li><strong>标题</strong>：用<code>#</code>表示不同级别标题，<code>#</code>数量对应标题层级，如<code># 一级标题</code> 、<code>## 二级标题</code> 。</li>
+<li><strong>段落</strong>：普通文本直接书写，段落间空行分隔。</li>
+<li><strong>超链接</strong>：格式<code>[链接文本](链接地址)</code> ，如<code>[百度](https://www.baidu.com)</code> 。</li>
+<li><strong>图片</strong>：格式<code>![图片描述](图片地址)</code> ，如<code>![示例图片](https://example.com/image.jpg)</code> 。</li>
+<li>列表：<ul>
+<li><strong>无序列表</strong>：用<code>-</code> 、<code>*</code>或<code>+</code>引导，如<code>- 列表项1</code> 。</li>
+<li><strong>有序列表</strong>：用数字加点引导，如<code>1. 列表项1</code> 。</li>
+</ul>
+</li>
+<li>强调：<ul>
+<li><strong>加粗</strong>：用<code>** **</code>包裹文本，如<code>**加粗内容**</code> 。</li>
+<li><strong>斜体</strong>：用<code>* *</code>包裹文本，如<code>*斜体内容*</code> 。</li>
+</ul>
+</li>
+<li>代码块：<ul>
+<li><strong>行内代码</strong>：用反引号包裹，如<code>使用</code>hexo generate<code>命令生成静态文件</code> 。</li>
+<li><strong>代码块</strong>：用三个反引号包裹，并可指定编程语言（可选）</li>
+</ul>
+</li>
+</ul>
+<p>将写好的 md 文档放在 Hexo 博客根目录下的<code>source/_posts</code>文件夹，执行<code>hexo generate</code>生成静态文件，再启动服务器（<code>hexo server</code> ）即可预览文章效果。</p>
+
+  </div>
+  
+  
+    <div class="post-tags">
+      
+        <a href="/tags/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" class="post-tag">#使用说明</a>
+      
+    </div>
+  
+</article>
+
+
+  <div class="post-navigation">
+    
+      <a href="/2025/04/30/hello-world/" class="post-nav-prev">
+        <span class="post-nav-label">上一篇</span>
+        <span class="post-nav-title">Hello World</span>
+      </a>
+    
+    
+      <a href="/2025/04/27/2025-04-27-Hexo-%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9%E9%87%8D%E7%82%B9%E6%8C%87%E5%8D%97/" class="post-nav-next">
+        <span class="post-nav-label">下一篇</span>
+        <span class="post-nav-title">Hexo 主题修改重点指南</span>
+      </a>
+    
+  </div>
+
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; 2025 John Doe
+      </div>
+      
+        <div class="footer-links">
+          
+            <a href="/about" class="footer-link">关于我们</a>
+          
+            <a href="/contact" class="footer-link">联系方式</a>
+          
+            <a href="/privacy" class="footer-link">隐私政策</a>
+          
+            <a href="/terms" class="footer-link">服务条款</a>
+          
+        </div>
+      
+    </div>
+  </footer>
+
+  
+    
+      <script src="/js/main.js"></script>
+    
+  
+</body>
+</html>
