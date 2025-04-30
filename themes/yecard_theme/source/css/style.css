@@ -4,10 +4,10 @@
   --secondary-color: #333;
   --text-color: #333;
   --light-text-color: #666;
-  --background-color: #fff;
-  --light-background: #f5f7fa;
+  --background-color: #f5f7fa;
+  --light-background: #fff;
   --border-color: #eaeaea;
-  --button-primary-bg: #0c4dff;
+  --button-primary-bg: #89c2f8fd;
   --button-secondary-bg: #333;
   --button-primary-text: #fff;
   --button-secondary-text: #fff;
@@ -111,12 +111,23 @@ a:hover {
 }
 
 .hero-title {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 16px;
-  line-height: 1.2;
+  display: flex;          /* 使用Flexbox布局 */
+  align-items: center;    /* 垂直居中对齐 */
+  justify-content: center; /* 水平居中对齐 */
+  margin-bottom: 20px;
 }
 
+.hero-logo {
+  width: 80px;            /* 设置logo宽度 */
+  height: 80px;           /* 设置logo高度 */
+  margin-right: 10px;     /* 在logo右侧添加10px的间距 */
+}
+
+.hero-heading {
+  font-size: 48px;        /* 设置文字大小 */
+  font-weight: bold;
+  color: #333;
+}
 .hero-subtitle {
   font-size: 20px;
   color: var(--light-text-color);

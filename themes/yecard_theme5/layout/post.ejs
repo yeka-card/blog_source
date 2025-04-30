@@ -1,0 +1,31 @@
+<article class="post">
+  <h1 class="post-title"><%= page.title %></h1>
+  <div class="post-meta">
+    <span class="post-date"><%= date(page.date, 'YYYY-MM-DD') %></span>
+    <% if (page.tags && page.tags.length) { %>
+      <% page.tags.forEach(function(tag) { %>
+        <a href="<%- url_for(tag.path) %>" class="post-tag">#<%= tag.name %></a>
+      <% }); %>
+    <% } %>
+  </div>
+  <div class="post-content">
+    <%- page.content %>
+  </div>
+  
+  <% if (theme.show_post_nav) { %>
+    <div class="post-nav">
+      <% if (page.prev) { %>
+        <a href="<%- url_for(page.prev.path) %>" class="post-nav-prev">
+          <span>上一篇</span>
+          <p><%= page.prev.title %></p>
+        </a>
+      <% } %>
+      <% if (page.next) { %>
+        <a href="<%- url_for(page.next.path) %>" class="post-nav-next">
+          <span>下一篇</span>
+          <p><%= page.next.title %></p>
+        </a>
+      <% } %>
+    </div>
+  <% } %>
+</article>
