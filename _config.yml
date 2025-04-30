@@ -101,5 +101,5 @@ theme: yecard_theme
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/yeka-card/yeka-card.github.io.git
+  repo: https://x-access-token:${AUTO_GITHUB_IO}@github.com/yeka-card/yeka-card.github.io.git
   branch: main
