@@ -1,7 +1,7 @@
 ---
 title: OpenRouter全面指南：OpenAI/Claude/Gemini等大模型随意用，含国内购买及免费使用教程
 date: 2025-05-09 15:00:00
-tags:
+tags: 
 * openrouter
 * 野卡
 * openrouter教程
