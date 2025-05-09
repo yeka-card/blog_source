@@ -48,7 +48,7 @@ Netflix（也就是大家口中的奈飞，或者网飞），作为全球最大�
 
 *通常不需要绑定海外手机号，如果要的话可以用接码平台来搞定。*
 
-![](https://workstation.sg.larksuite.com/space/api/box/stream/download/asynccode/?code=Y2U4NDFiMTNkNjdlNmEwZTE3YTgwZjkzMzUyZTczNTlfNlI4QTFoUDYxT2RnMHl6N3QwTzN6RHRZRmk5SUJQeXNfVG9rZW46UjN5dGIzcEFCb3VGVGJ4WjRqR2xGbWtnZ1ZoXzE3NDY3NzY0MTU6MTc0Njc4MDAxNV9WNA)
+
 
 
 
@@ -56,7 +56,6 @@ Netflix（也就是大家口中的奈飞，或者网飞），作为全球最大�
 
 如果是使用野卡的话，是&#x5728;**【我的卡片】**&#x8FD9;里，选择Netflix，然后按指引完成订阅就OK。
 
-![](https://workstation.sg.larksuite.com/space/api/box/stream/download/asynccode/?code=OTIzYzJjMTY1YzRjYmMzYzNkYzU0YjlhNWNjZTJhYjRfaDd6QzVsQlpXVTIzT29VVzRpUlU1SzdFMnV3TU9EVW5fVG9rZW46SmtzRGJqN2NXb1pjSER4YlpkdGx1MklSZzhlXzE3NDY3NzY0MTU6MTc0Njc4MDAxNV9WNA)
 
 
 
@@ -76,7 +75,6 @@ Netflix 提供了好几种套餐，不同地区的套餐价格和内容可能会
 
 * **高级套餐（Premium）：** 超高清画质（4K+HDR），最多可以在四台设备上同时观看。适合对画质有极致追求、家里有 4K 电视或显示器、需要和家人朋友共享账号的土豪们。
 
-![](https://workstation.sg.larksuite.com/space/api/box/stream/download/asynccode/?code=OTVjZjk5ODU3MWEzMGViZGQ3ZDk0ZTZjMDc1N2EyYzBfalE3cVVweDZqZTBrQXJpYlpaWDVCWUt0VzdKMTIzY29fVG9rZW46WndiY2JnMnNKb1pQOTV4N2t3TGxoaktPZ1VlXzE3NDY3NzY0MTU6MTc0Njc4MDAxNV9WNA)
 
 如果你是和家人或朋友共享账号，可以考虑选择标准套餐或高级套餐。
 
