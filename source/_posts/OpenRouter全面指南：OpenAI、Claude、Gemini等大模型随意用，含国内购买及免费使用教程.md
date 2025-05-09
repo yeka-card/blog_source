@@ -2,13 +2,13 @@
 title: OpenRouter全面指南：OpenAI/Claude/Gemini等大模型随意用，含国内购买及免费使用教程
 date: 2025-05-09 15:00:00
 tags: 
-* openrouter
-* 野卡
-* openrouter教程
-* chatgpt
-* claude
-* OpenAI API
-* ai
+- openrouter
+- 野卡
+- openrouter教程
+- chatgpt
+- claude
+- OpenAI API
+- ai
 ---
 
 对于期望一站式调用全球主流大语言模型API（如OpenAI GPT系列、Anthropic Claude系列、Google Gemini及DeepSeek等）的开发者而言，OpenRouter提供了一个极具吸引力的解决方案。该平台不仅整合了众多模型资源，还为部分模型（如DeepSeek、Gemini部分版本）提供了免费使用额度。本文将深入介绍OpenRouter的核心功能、优势、国内环境下的使用方法及注意事项。
