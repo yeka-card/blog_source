@@ -1,29 +1,17 @@
 ---
-
 title: Windsurf超详细指南：从野卡订阅到Cascade高级玩法，一篇搞定！
-
 date: 2025-05-09 12:00:00
-
 tags:
-
 - windsurf
-
 - 野卡
-
 - windsurf教程
-
 - windsurf官网
-
 - ai编程工具
-
-* ai代码编辑器
-
+- ai代码编辑器
 ---
 
 
 相较于Cursor，Windsurf被定位为一款更易于AI编程新手入门的集成开发环境，其同样具备强大的AI辅助编程能力。本文将详细介绍Windsurf的安装配置流程、核心功能Cascade的特性与使用技巧，并探讨其订阅模式与免费使用策略，旨在为开发者，特别是初次接触AI编程的开发者，提供一份实用的参考指南。
-
-
 
 
 
@@ -69,7 +57,7 @@ Windsurf的核心竞争力在于其集成的\*\*Cascade\*\*功能，这是一个
 
 
 
-Windsurf的安装流程直接明了。访问官方下载页面 (\`https://codeium.com/windsurf/download\`)，根据操作系统类型选择相应的安装包下载并执行安装。
+Windsurf的安装流程直接明了。访问官方下载页面 (\`https://codeium.com/windsurf/download\` )，根据操作系统类型选择相应的安装包下载并执行安装。
 
 
 
