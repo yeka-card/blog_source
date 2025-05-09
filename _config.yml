@@ -3,12 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: W 野卡
-subtitle: ''
-description: ''
-keywords:
-language: zh-CN
-timezone: ''
+# title: W 野卡
+# subtitle: ''
+# description: ''
+# keywords:
+# language: zh-CN
+# timezone: ''
+title: 野卡
+subtitle: WildCard海外支付服务，一分钟注册，轻松订阅海外线上服务
+description: 野卡 (wildcard) 助您解决海外软件订阅难题！无需复杂流程，一分钟快速注册，轻松订阅ChatGPT Plus、Midjourney、Claude等热门服务。官网提供详细教程与支持。
+keywords: 野卡, wildcard, 虚拟信用卡, 海外订阅, ChatGPT Plus, Midjourney, Claude, OpenAI, 国外软件购买, 虚拟卡, 一分钟注册, 海外支付, 订阅服务, 野卡官网, wildcard官网
+
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
