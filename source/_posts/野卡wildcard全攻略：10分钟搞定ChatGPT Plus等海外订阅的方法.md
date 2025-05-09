@@ -33,6 +33,7 @@ categories: 野卡教程         # 所属分类（建议填写，可多个）
 | BIN 识别   | Unsupported card type    | 美元 BIN 虚拟卡，通过 Visa/Master 线路     |
 | 账单地址   | Billing address mismatch | 自动生成匹配地址 + 手动可编辑              |
 | 3-D Secure | 国内卡不支持             | 无需 3DS, 直接扣款                       |
+
 因为野卡发行方在海外合作银行有真实 BIN 段，再配合住宅 IP 与账单地址映射，系统可以模拟「境外真实持卡人」的支付环境，大幅降低拒付率。
 
 
