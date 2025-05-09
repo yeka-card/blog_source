@@ -103,3 +103,10 @@ deploy:
   type: git
   repo: https://github.com/yeka-card/yeka-card.github.io.git
   branch: main
+
+sitemap:
+  path: sitemap.xml # 生成的sitemap文件名，默认为 sitemap.xml
+  # rel: false # 是否在每个页面的 head 中添加 sitemap 链接
+  # template: ./sitemap_template.xml # 自定义 sitemap 模板路径
+  # tags: true # 是否包含标签页, 默认为 true
+  # categories: true # 是否包含分类页, 默认为 true
