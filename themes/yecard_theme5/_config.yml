@@ -1,11 +1,13 @@
 # 主题配置文件
 
 # 网站标题和描述
-title: 数字指南
-subtitle: 你的数字世界导航
+title: 野卡
+subtitle: WildCard海外支付服务，一分钟注册，轻松订阅海外线上服务
+description: 野卡 (wildcard) 助您解决海外软件订阅难题！无需复杂流程，一分钟快速注册，轻松订阅ChatGPT Plus、Midjourney、Claude等热门服务。官网提供详细教程与支持。
+keywords: 野卡, wildcard, 虚拟信用卡, 海外订阅, ChatGPT Plus, Midjourney, Claude, OpenAI, 国外软件购买, 虚拟卡, 一分钟注册, 海外支付, 订阅服务, 野卡官网, wildcard官网
 
 # 网站 Logo
-logo: /image/W_logo.jpg
+logo: /image/yeka.jpg
 
 # 导航菜单
 menu:
@@ -14,14 +16,14 @@ menu:
 
 # 英雄区域配置
 hero:
-  title: W 野卡
-  subtitle: 一分钟注册，轻松订阅海外线上服务
+  title: 野卡
+  subtitle: 一分钟注册，轻松订阅ChatGPT Plus等海外线上服务
   buttons:
     - text: 前往官网
-      url: https://yeka.ai/
+      url: https://yeka.ai/i/D4X7JXA7
       type: primary
     - text: 常见问题
-      url: /faq
+      url: https://yeka.ai/faq
       type: secondary
 
 # 是否显示"查看更多文章"按钮
@@ -29,10 +31,8 @@ show_more_posts: true
 
 # 页脚链接
 footer_links:
-  关于我们: /about
-  联系方式: /contact
-  隐私政策: /privacy
-  服务条款: /terms
+  关于我们: https://www.fengshengyusheng.cn/
+  
 
 # 是否显示文章导航（上一篇/下一篇）
 show_post_nav: true
