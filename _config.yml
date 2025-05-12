@@ -2,13 +2,7 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
-# title: W 野卡
-# subtitle: ''
-# description: ''
-# keywords:
-# language: zh-CN
-# timezone: ''
+# Site网站信息
 title: 野卡
 subtitle: WildCard海外支付服务，一分钟注册，轻松订阅海外线上服务
 description: 野卡 (wildcard) 助您解决海外软件订阅难题！无需复杂流程，一分钟快速注册，轻松订阅ChatGPT Plus、Midjourney、Claude等热门服务。官网提供详细教程与支持。
