@@ -20,7 +20,7 @@ hero:
       url: https://yeka.ai/i/D4X7JXA7
       type: primary
     - text: 常见问题
-      url: https://yeka.ai/faq
+      url: https://yeka.xlog.app/faq?locale=zh
       type: secondary
 
 # 是否显示"查看更多文章"按钮
