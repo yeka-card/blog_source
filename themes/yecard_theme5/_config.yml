@@ -1,6 +1,6 @@
 # 主题配置文件
 
-#导航栏信息
+# 导航栏信息
 title: 野卡
 
 # 网站 Logo
@@ -20,7 +20,7 @@ hero:
       url: https://yeka.ai/i/D4X7JXA7
       type: primary
     - text: 常见问题
-      url: https://yeka.xlog.app/faq?locale=zh
+      url: https://yeka.ai/faq
       type: secondary
 
 # 是否显示"查看更多文章"按钮
