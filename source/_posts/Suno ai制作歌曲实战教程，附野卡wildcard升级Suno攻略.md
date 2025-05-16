@@ -1,10 +1,9 @@
-
 ---
 title: Suno ai制作歌曲实战教程，附野卡wildcard升级Suno攻略
-date: 2025-05-08 20:35:00
+date: 2025-05-15 20:30:00
 tags:
 - Suno
-- Suno 会员
+- Suno会员
 - 野卡
 ---
 
