@@ -1,8 +1,8 @@
 // 网站配置文件
 export const siteConfig = {
   // 网站标题和描述
-  title: "数字指南",
-  subtitle: "你的数字世界导航",
+  title: "野卡",
+  subtitle: "wildcard官网，一分钟轻松订阅ChatGPT等海外线上服务",
 
   // 网站 Logo
   logo: "/images/w-logo.png", // 使用已上传的logo
@@ -15,17 +15,17 @@ export const siteConfig = {
 
   // 英雄区域配置
   hero: {
-    title: "W 野卡",
+    title: "野卡",
     subtitle: "一分钟注册，轻松订阅海外线上服务",
     buttons: [
       {
         text: "前往官网",
-        url: "https://yeka.ai/?code=JPQBUN6O",
+        url: "https://yeka.ai/i/D4X7JXA7",
         type: "primary",
       },
       {
         text: "常见问题",
-        url: "/faq",
+        url: "https://yeka.ai/faq",
         type: "secondary",
       },
     ],
