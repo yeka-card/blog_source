@@ -12,7 +12,7 @@ export default function Home() {
       <div className="w-64 border-r p-6 flex flex-col">
         <div className="mb-6">
           <Image src="/placeholder.svg?height=50&width=50" alt="DiSnail Logo" width={50} height={50} className="mb-4" />
-          <h1 className="text-2xl font-semibold text-gray-800">DiSnail</h1>
+          <h2 className="text-2xl font-semibold text-gray-800">DiSnail</h2>
           <p className="text-sm text-gray-600 mt-2">DiSnail的Github技术博客</p>
         </div>
 
