@@ -483,3 +483,12 @@ a:hover {
 .tag-item:nth-child(5n + 5):hover {
   background-color: #ed5565; /* 红色 */
 }
+/* 让文章内容中引用块里的链接变成蓝色 */
+.post-content blockquote a {
+  color: #4a89dc; /* 这个颜色和引用块的左边框颜色一致 */
+}
+
+/* 可选：如果你希望鼠标悬停时链接颜色有变化，可以添加以下规则 */
+.post-content blockquote a:hover {
+  color: #333; /* 鼠标悬停时变为深灰色，与正文链接的 hover 效果一致 */
+}
