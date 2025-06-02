@@ -1,6 +1,6 @@
 ---
 title: Ultra Mobile完全指南：野卡绑定详细教程与最佳实践(2025最新)
-date: 2025-05-30 19:30
+date: 2025-06-02 19:30
 tags:
 - Ultra Mobile
 - 美国电话卡
