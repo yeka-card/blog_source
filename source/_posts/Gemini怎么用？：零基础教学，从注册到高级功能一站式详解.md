@@ -1,3 +1,13 @@
+---
+title: Gemini怎么用？：零基础教学，从注册到高级功能一站式详解
+date: 2025-06-08 19:30
+tags:
+- Gemini
+- Google
+- Gemini使用
+---
+
+
 Google推出的Gemini2.5 Pro无疑是目前表现最强的AI大模型
 
 
